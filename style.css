@@ -1,0 +1,140 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+article {
+	width: 50vw;
+	height: 100vh;
+	display: grid;
+
+	grid-template-rows: 0.7fr 0.3fr 0.4fr 7fr;
+}
+
+h1 {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+.days-names {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	/* padding-left: 2vw;
+	padding-right: 2vw; */
+	justify-content: space-around;
+	align-items: center;
+	grid-gap: 0.3vw;
+}
+
+h3 {
+	margin: 0;
+	font-size: 1.2vw;
+	text-align: center;
+}
+
+#days-numbers {
+	margin-left: 0.3vw;
+	height: 60vh;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-areas: 'm tu w th f str snd';
+}
+
+#monday {
+	grid-area: m;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#tuesday {
+	grid-area: tu;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#wednesday {
+	grid-area: w;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#thursday {
+	grid-area: th;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#friday {
+	grid-area: f;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#saturday {
+	grid-area: str;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#sunday {
+	grid-area: snd;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#days-numbers div div {
+	background-color: rgb(227, 234, 235);
+	width: 6vw;
+	height: 5vw;
+	margin: 0.3vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 0.5vh;
+	font-size: 1.5vw;
+	overflow: hidden;
+}
+
+#days-numbers div div div {
+	background-color: rgb(173, 186, 187) !important;
+	width: 5vw;
+	height: 3vw;
+	font-size: 2vw;
+	font-weight: bolder;
+	text-align: center;
+	align-self: flex-end;
+	justify-self: flex-end;
+	outline: none;
+}
+
+.current-month {
+	background-color: rgb(173, 186, 187) !important;
+}
+
+.event {
+	display: flex;
+}
+
+.tip {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	font-size: 1.3vw;
+	color: rgb(85, 177, 184);
+}
